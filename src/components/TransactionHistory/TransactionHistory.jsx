@@ -1,5 +1,4 @@
 import css from './TransactionHistory.module.css';
-import PropTypes from 'prop-types';
 import TransactionHistoryCompoment from './TransactionHistoryCompoment'
 const TransactionHistory = ({ items }) => {
   const color = '#e8e8e8';
