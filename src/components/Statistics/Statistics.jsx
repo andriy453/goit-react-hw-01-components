@@ -1,6 +1,6 @@
 import css from './Statistics.module.css';
 import PropTypes from 'prop-types'; 
-const Statistics = ({ title = '', stats = ''}) => {
+const Statistics = ({ title, stats}) => {
   function getRandomHexColor() {
     return `#${Math.floor(Math.random() * 16777215)
       .toString(16)
@@ -9,7 +9,7 @@ const Statistics = ({ title = '', stats = ''}) => {
   return (
     <>
       <section className={css.statistics}>
-        <h2 className={css.title}>{title}</h2>
+        <h2 className={css.title}>{title && title}</h2>
 
         <ul className={css.stat_list}>
           <li key={stats[0].id} className={css.item}  style={{background:getRandomHexColor()}}>
