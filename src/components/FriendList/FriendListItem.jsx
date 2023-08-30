@@ -1,23 +1,23 @@
 import css from './FriendList.module.css';
 import PropTypes from 'prop-types';
 const FriendListItem = ({ friends }) => {
-    const isOnline = friends.isOnline;
+  const {id,isOnline,avatar,name} =friends
   return (
     <>
-      <li className={css.item} key={friends.id}>
+      <li className={css.item} key={id}>
         {isOnline === true ? (
-          <span className={css.status}>{friends.isOnline}</span>
+          <span className={css.status}>{isOnline}</span>
         ) : (
-          <span className={css.status_red}>{friends.isOnline}</span>
+          <span className={css.status_red}>{isOnline}</span>
         )}
 
         <img
           className={css.avatar}
-          src={friends.avatar}
+          src={avatar}
           alt="User avatar"
           width="48"
         />
-        <p className={css.name}>{friends.name}</p>
+        <p className={css.name}>{name}</p>
       </li>
     </>
   );

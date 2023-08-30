@@ -1,12 +1,13 @@
 import css from './TransactionHistory.module.css';
 import PropTypes from 'prop-types';
 const TransactionHistoryCompoment = ({ items, color }) => {
+  const {id,type,amount,currency} = items;
   return (
     <>
-      <tr key={items.id} className={css.table} style={{ background: color }}>
-        <td>{items.type}</td>
-        <td>{items.amount}</td>
-        <td>{items.currency}</td>
+      <tr key={id} className={css.table} style={{ background: color }}>
+        <td>{type}</td>
+        <td>{amount}</td>
+        <td>{currency}</td>
       </tr>
     </>
   );

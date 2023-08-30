@@ -33,23 +33,23 @@
   background-color: black;
 }
 .name {
-    font-weight: bold;
-    font-size: 25px;
-    margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 10px;
 }
 .tag {
-    margin-bottom: 10px;
-    color: gray;
+  margin-bottom: 10px;
+  color: gray;
 }
 .label {
   margin-bottom: 5px;
   color: gray;
 }
 .quantity {
-    font-weight: bold;
+  font-weight: bold;
 }
 .location {
-    color: gray;
+  color: gray;
 }
 .item {
   display: flex;
@@ -57,7 +57,7 @@
   flex-basis: 33.33%;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: rgb(235, 235, 235);;
+  background-color: rgb(235, 235, 235);
 }
 .item {
   box-shadow: 10px 14px 3px 10px rgb(0, 0, 0);

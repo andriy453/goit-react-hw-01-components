@@ -2,40 +2,38 @@
   margin: 0px;
   padding: 0px;
 }
-.friend_list{
-margin-bottom: 20px;
+.friend_list {
+  margin-bottom: 20px;
 }
-.item{
-display: flex;
-align-items: center;
-padding: 5px;
-margin-bottom: 10px;
-box-shadow: 0px 0px  3px  rgb(38, 37, 37);
-border-radius: 1px;
-overflow: hidden;
-width: 250px;
+.item {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 3px rgb(38, 37, 37);
+  border-radius: 1px;
+  overflow: hidden;
+  width: 250px;
 }
-.status{
-width: 15px;
-height: 15px;
-border-radius: 50%;
-background-color: darkgreen;
+.status {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: darkgreen;
   margin-right: 15px;
 }
-.status_red{
-width: 15px;
-height: 15px;
-border-radius: 50%;
-background-color: rgb(247, 1, 1);
+.status_red {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(247, 1, 1);
   margin-right: 15px;
 }
-.avatar{
+.avatar {
   border-radius: 10%;
   background-color: bisque;
   margin-right: 15px;
-
 }
-.name{
-font-size: 20px;
-
+.name {
+  font-size: 20px;
 }
