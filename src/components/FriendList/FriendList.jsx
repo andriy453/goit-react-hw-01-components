@@ -1,12 +1,14 @@
-import css from './FriendList.module.css';
+import { nanoid } from 'nanoid'
 import PropTypes from 'prop-types';
+
+import css from './FriendList.module.css';
 import FriendListItem from './FriendListItem';
 const FriendList = ({ friends }) => {
   return (
     <ul className={css.friend_list}>
       {friends && friends.map((friend)=>{
         return(
-          <FriendListItem friends={friend} />
+          <FriendListItem  key={nanoid()} friends={friend} />
         )
       })}
     </ul>

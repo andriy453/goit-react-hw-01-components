@@ -1,3 +1,5 @@
+import { nanoid } from 'nanoid'
+
 import css from './TransactionHistory.module.css';
 import TransactionHistoryCompoment from './TransactionHistoryCompoment';
 const TransactionHistory = ({ items }) => {
@@ -16,7 +18,7 @@ const TransactionHistory = ({ items }) => {
         <tbody>
           {items&& items.map((item)=>{
             return(
-              <TransactionHistoryCompoment items={item} color={color} />
+              <TransactionHistoryCompoment key={nanoid()} items={item} color={color} />
             )
           })}
         </tbody>
